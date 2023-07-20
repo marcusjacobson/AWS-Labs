@@ -3,8 +3,6 @@ This repository contains the documentation for various IAM Basic Projects. These
 
 The sections below will cover the details of the different projects in this repo:
 
-[[_TOC_]]
-
 ## [Build a new Organization and Set Up Users and Groups in IAM](Build-A-New-Organization-in-IAM.md)
 
 This project consists of 4 sections:
