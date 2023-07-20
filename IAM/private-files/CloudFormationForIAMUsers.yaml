@@ -1,0 +1,203 @@
+Description: "Create Users in IAM and assign them to appropriate groups"
+Resources:
+  ElliottMendel:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - IT-Users
+        - IT-Admins
+      UserName: Elliott-Mendel
+      Path: /
+
+  MarySirois:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - IT-Users
+        - IT-Admins
+      UserName: Mary-Sirois
+      Path: /
+
+  TracySmith:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - IT-Users
+      UserName: Tracy-Smith
+      Path: /
+
+  LindsayBaum:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - IT-Users
+      UserName: Lindsay-Baum
+      Path: /
+
+  MichaelMcCray:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - HR-Users
+        - Management-Team
+      UserName: Michael-McCray
+      Path: /
+
+  EleanorWright:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - HR-Users
+      UserName: Eleanor-Wright
+      Path: /
+
+  MaryStarks:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - HR-Users
+      UserName: Mary-Starks
+      Path: /
+
+  MarthaSanders:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - HR-Users
+      UserName: Martha-Sanders
+      Path: /
+
+  MaryanneWatts:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - HR-Users
+      UserName: Maryanne-Watts
+      Path: /
+
+  TonyaThames:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Finance-Users
+        - Management-Team
+      UserName: Tonya-Thames
+      Path: /
+
+  DanielDrew:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Finance-Users
+      UserName: Daniel-Drew
+      Path: /
+
+  CharlesJones:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Finance-Users
+      UserName: Charles-Jones
+      Path: /
+
+  DavidThomas:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Finance-Users
+      UserName: David-Thomas
+      Path: /
+
+  SaranThompson:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Sales-And-Marketing-Users
+        - Sales-Team
+        - Marketing-Team
+        - Management-Team
+      UserName: Saran-Thompson
+      Path: /
+
+  NancyChisholm:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Sales-And-Marketing-Users
+        - Sales-Team
+      UserName: Nancy-Chisholm
+      Path: /
+
+  JohnRosa:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Sales-And-Marketing-Users
+        - Sales-Team
+      UserName: John-Rosa
+      Path: /
+
+  TimBemis:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Sales-And-Marketing-Users
+        - Marketing-Team
+      UserName: Tim-Bemis
+      Path: /
+
+  AlfredFigueroa:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Sales-And-Marketing-Users
+        - Marketing-Team
+      UserName: Alfred-Figueroa
+      Path: /
+
+  JillDuke:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Operations-Users
+        - Operations-Logistics
+        - Operations-Support
+        - Management-Team
+      UserName: Jill-Duke
+      Path: /
+
+  LuisaRoot:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Operations-Users
+        - Operations-Logistics
+      UserName: Luisa-Root
+      Path: /
+  
+  RobertVanegas:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Operations-Users
+        - Operations-Support
+      UserName: Robert-Vanegas 
+      Path: /
+
+  ToddWalsh:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Operations-Users
+        - Operations-Support
+      UserName: Todd-Walsh
+      Path: /
+
+  RandyZepeda:
+    Type: AWS::IAM::User
+    Properties: 
+      Groups:
+        - Operations-Users
+        - Operations-Support
+      UserName: Randy-Zepeda
+      Path: /

@@ -1,0 +1,67 @@
+Description: "Create Groups in IAM"
+Resources:
+    ManagementTeam:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Management-Team
+            Path: /
+            
+    ITUsers:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: IT-Users
+            Path: /
+
+    ITAdmins:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: IT-Admins
+            Path: /
+
+    HRUsers:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: HR-Users
+            Path: /
+
+    FinanceUsers:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Finance-Users
+            Path: /
+
+    SalesAndMarketingUsers:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Sales-And-Marketing-Users
+            Path: /            
+
+    SalesTeam:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Sales-Team
+            Path: /  
+
+    MarketingTeam:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Marketing-Team
+            Path: /  
+
+    OperationsUsers:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Operations-Users
+            Path: / 
+
+    OperationsLogistics:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Operations-Logistics
+            Path: /  
+
+    OperationsSupport:
+        Type: AWS::IAM::Group
+        Properties: 
+            GroupName: Operations-Support
+            Path: /  

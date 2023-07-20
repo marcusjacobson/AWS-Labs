@@ -1,0 +1,118 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "AWS Organizations using Cloudformation - Creates OU, nested OU, account and organizations policies"
+
+Parameters:
+  OrganizationRoot:
+    Description: 'r-u7ws'
+    Type: String  
+  
+  ITOU:
+    Description: 'ou-u7ws-qju0c5qu'
+    Type: String 
+  
+  HROU:
+    Description: 'ou-u7ws-ok5g1q6e'
+    Type: String 
+
+  FinanceOU:
+    Description: 'ou-u7ws-vivaezts'
+    Type: String 
+
+  SalesAndMarketingOU:
+    Description: 'ou-u7ws-9v5fflfb'
+    Type: String 
+
+  OperationsOU:
+    Description: 'ou-u7ws-yadglrrd '
+    Type: String 
+
+Resources:
+  ITAdmins:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: IT-Admins
+          ParentId: !Ref ITOU
+
+  ITEngineers:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: IT-Engineers
+          ParentId: !Ref ITOU
+
+  ITSupport:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: IT-Support
+          ParentId: !Ref ITOU
+
+  HRManagers:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: HR-Managers
+          ParentId: !Ref HROU
+
+  HRRecruiters:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: HR-Recruiters
+          ParentId: !Ref HROU
+
+  HRStaff:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: HR-Staff
+          ParentId: !Ref HROU
+
+  FinanceManagers:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Finance-Managers
+          ParentId: !Ref FinanceOU
+
+  FinancePurchasers:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Finance-Purchasers
+          ParentId: !Ref FinanceOU
+
+  FinanceAccounting:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Finance-Accounting
+          ParentId: !Ref FinanceOU
+
+  SalesAndMarketingManagers:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Sales-And-Marketing-Managers
+          ParentId: !Ref SalesAndMarketingOU
+
+  SalesTeam:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Sales-Team
+          ParentId: !Ref SalesAndMarketingOU
+
+  MarketingTeam:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Marketing-Team
+          ParentId: !Ref SalesAndMarketingOU
+
+  OperationsManagers:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Operations-Managers
+          ParentId: !Ref OperationsOU
+
+  OperationsLogistics:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Operations-Logistics
+          ParentId: !Ref OperationsOU
+
+  OperationsSupport:
+      Type: AWS::Organizations::OrganizationalUnit
+      Properties:
+          Name: Operations-Support
+          ParentId: !Ref OperationsOU
