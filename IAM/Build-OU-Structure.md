@@ -1,15 +1,15 @@
 # Create Initial OU
 To start, I'll create the initial Organizational Unit (OU) in the AWS console, and name it JacoCloud. 
 
-![Initial OU](images\initial-OU.png)
+![Initial OU](images/initial-OU.png)
 
 # Create First Child OU
 
 Once the JacoCloud OU is created, I'll create the first Child OU for the IT department:
 
-![Child OU Console Step 1](images\child-OU-console-1.png)
+![Child OU Console Step 1](images/child-OU-console-1.png)
 
-![Child OU Console Step 2](images\child-OU-console-2.png)
+![Child OU Console Step 2](images/child-OU-console-2.png)
 
 # Create Remaining Top Level Child OUs using CLI
 
@@ -68,27 +68,27 @@ From the AWS Console, go to CloudFormation and select **Create stack**.
 
 I'll upload the CloudFormation Template provided from the site above, and create the stack as follows:
 
-![Create Stack 1](images\cloud-formation-create-stack-1.png)
+![Create Stack 1](images/cloud-formation-create-stack-1.png)
 
-![Create Stack 2](images\cloud-formation-create-stack-2.png)
+![Create Stack 2](images/cloud-formation-create-stack-2.png)
 
 *OU IDs have been redacted for privacy*
 
-![Create Stack 3](images\cloud-formation-create-stack-3.png)
+![Create Stack 3](images/cloud-formation-create-stack-3.png)
 
 *Note the definition of the IAM role I created earlier*
 
 The stack will automatically run once completed. 
 
-![Run Stack 1](images\cloud-formation-run-stack-1.png)
+![Run Stack 1](images/cloud-formation-run-stack-1.png)
 
 Once the CloudFormation stack has completed running, it should show a series of CREATE_COMPLETE messages
 
-![Run Stack 2](images\cloud-formation-run-stack-2.png)
+![Run Stack 2](images/cloud-formation-run-stack-2.png)
 
 Once the CloudFormation stack has completed, verify the additional OUs are present in AWS Organizations:
 
-![Run Stack 3](images\cloud-formation-run-stack-3.png)
+![Run Stack 3](images/cloud-formation-run-stack-3.png)
 
 # Notes:
 
