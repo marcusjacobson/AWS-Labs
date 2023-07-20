@@ -3,7 +3,7 @@ This repository contains the documentation for various IAM Basic Projects. These
 
 The sections below will cover the details of the different projects in this repo:
 
-## [Build a new Organization and Set Up Users and Groups in IAM](Build-A-New-Organization-in-IAM.md)
+## [Build a new Organization and Set Up Users and Groups in IAM](IAM/Build-A-New-Organization-in-IAM.md)
 
 This project consists of 4 sections:
 * Create a new AWS account to manage the Organization
