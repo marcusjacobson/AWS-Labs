@@ -11,15 +11,15 @@ First, I'll create the **James Young (CEO)** user in the IAM console.
 
 **Note**: At this point I will not be adding access to the AWS Management Console for any users.
 
-![Create User Console 1](images\create-user-console-1.png)
+![Create User Console 1](images/create-user-console-1.png)
 
 Complete the wizard and ensure the user is added to the defined groups
 
-![Create User Console 2](images\create-user-console-2.png)
+![Create User Console 2](images/create-user-console-2.png)
 
 Once complete, confirm the user is now listed in the IAM console
 
-![Create User Console 3](images\create-user-console-3.png)
+![Create User Console 3](images/create-user-console-3.png)
 
 # Create the next user using AWS CLI
 
@@ -53,16 +53,16 @@ Prior to creating a CloudFormation Stack, an IAM policy and role will need to be
 
 Once the Policy and Role is set up, Create the stack and upload the yaml template and then complete the wizard:
 
-![Create User in CloudFormation1](images\create-user-cloudformation-1.png)
+![Create User in CloudFormation1](images/create-user-cloudformation-1.png)
 
 Once the stack has been created, view the progress in the CloudFormation Console
 
-![Create User in CloudFormation2](images\create-user-cloudformation-2.png)
+![Create User in CloudFormation2](images/create-user-cloudformation-2.png)
 
-![Create User in CloudFormation3](images\create-user-cloudformation-3.png)
+![Create User in CloudFormation3](images/create-user-cloudformation-3.png)
 
 # Confirm Groups Added to IAM
 
 Once the CloudFormation Stack has run, return to IAM and ensure the users have been created and associated to the appropriate groups.
 
-![Create User in CloudFormation4](images\create-user-cloudformation-4.png)
+![Create User in CloudFormation4](images/create-user-cloudformation-4.png)
