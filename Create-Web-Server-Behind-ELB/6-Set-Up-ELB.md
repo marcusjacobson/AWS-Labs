@@ -1,0 +1,3 @@
+ELB is wrong, probably auto-scaling group is what we want...
+
+Re-start EC2 instance before continuing.
