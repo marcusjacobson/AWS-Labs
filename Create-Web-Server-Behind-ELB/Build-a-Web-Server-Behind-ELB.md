@@ -13,12 +13,18 @@ The goal of this project is to demonstrate proficiency in setting up EC2 instanc
 
 This project consists of the activities below. Click on the hyperlinks to see the processes/details of how these steps were acheived
 
-**Step 1:** Create a VPC for the web server with a public subnet and internet gateway
-**Step 2:** Create an S3 bucket for web assets, and then create 2 additional buckets as redundant storage for replication.
+**Step 1:** [Create a VPC for the web server with a public subnet and internet gateway](/Create-Web-Server-Behind-ELB/1-Create-VPC.md)
+
+**Step 2:** [Create an S3 bucket for web assets, and then create 2 additional buckets as redundant storage for replication.](/Create-Web-Server-Behind-ELB/2-Create-S3-Buckets.md)
+
 **Step 3:** Create a security group with web access for the web server.
+
 **Step 4:** Set up an Apache web server on an EC2 instance, and add it to the security group.
+
 **Step 5:** Connect the S3 bucket to the web server, to serve web assets.
+
 **Step 6:** Set up an Elastic Load Balancer to scale out/in the web servers as needed.
+
 **Step 7:** Stress test the web servers to test the Elastic Load Balancer
 
 **Note**: All AWS assets created during this exercise contains the tag: **AWS-Labs:Test-Web-Server**
