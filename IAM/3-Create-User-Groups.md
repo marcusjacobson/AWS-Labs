@@ -9,7 +9,7 @@
 
 First, I'll create the **All-Users** group in the IAM console. 
 
-![Create Group in Console](images\create-group-console.png)
+![Create Group in Console](images/create-group-console.png)
 
 # Create the second group using CLI
 
@@ -35,16 +35,16 @@ Prior to creating a CloudFormation Stack, an IAM policy and role will need to be
 
 Once the Policy and Role is set up, Create the stack and upload the yaml template and then complete the wizard:
 
-![Create Group in CloudFormation1](images\create-group-cloudformation-1.png)
+![Create Group in CloudFormation1](images/create-group-cloudformation-1.png)
 
 Once the stack has been created, view the progress in the CloudFormation Console
 
-![Create Group in CloudFormation2](images\create-group-cloudformation-2.png)
+![Create Group in CloudFormation2](images/create-group-cloudformation-2.png)
 
-![Create Group in CloudFormation3](images\create-group-cloudformation-3.png)
+![Create Group in CloudFormation3](images/create-group-cloudformation-3.png)
 
 # Confirm Groups Added to IAM
 
 Once the CloudFormation Stack has run, return to IAM and ensure the groups have been created.
 
-![Create Group in CloudFormation4](images\create-group-cloudformation-4.png)
+![Create Group in CloudFormation4](images/create-group-cloudformation-4.png)

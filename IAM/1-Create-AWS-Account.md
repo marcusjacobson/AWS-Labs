@@ -4,9 +4,9 @@ To begin the project, I'll add a new AWS account to manage organization. For thi
 
 I will also add the Tag of AWS-Labs:Test-Org
 
-![Add AWS Account](images\add-aws-account.png)
+![Add AWS Account](images/add-aws-account.png)
 
 Once the account is created, it will show up in my Organization (sensitive details blocked out for privacy):
 
-![AWS Account List](images\aws-account-list.png)
+![AWS Account List](images/aws-account-list.png)
 
