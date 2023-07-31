@@ -14,3 +14,18 @@ This project consists of 4 sections:
 This project demonstrates proficiency in AWS Organizations and IAM, using the AWS Console, CLI and CloudFormation.
 
 **Note**: The IAM structure built during this project will be referenced in future AWS projects.
+
+## [Create A Web Server with Auto Scaling](/Create-Web-Server-With-Auto-Scaling/Build-a-Web-Server-Behind-With-Auto-Scaling.md)
+
+This project consists of 8 sections:
+
+* Create a VPC
+* Create a series of S3 buckets with replication for the web server to access
+* Create a security group for the web server to allow HTTP and HTTPS access
+* Create an EC2 instance and set up Apache Web Server
+* Connect the web server to the S3 buckets
+* Set up an Auto Scaling group
+* Stress test the web server to test the functionality of the Auto Scaling group
+* Remove AWS assets to avoid recurring charges, and to clean up other remnants from the project.
+
+This project demonstrates proficiency in setting up live EC2 instances with web access, S3 buckts and Auto Scaling groups.

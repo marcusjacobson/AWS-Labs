@@ -1,7 +1,7 @@
-This Project emulates the a practical configuration of a web server, including connected S3 buckets for web assets and implementation of an Elastic Load Balancer to scale out additional instances of the web server as needed based on traffic.
+This Project emulates the a practical configuration of a web server, including connected S3 buckets for web assets and implementation of an Auto Scaling group to scale out additional instances of the web server as needed based on traffic.
 
 # Project Goal
-The goal of this project is to demonstrate proficiency in setting up EC2 instances, Elastic Load Balancers and S3 buckets in a practical use case.
+The goal of this project is to demonstrate proficiency in setting up EC2 instances, Auto Scaling Groups and S3 buckets in a practical use case.
 
 # Setup
 
@@ -13,7 +13,7 @@ The goal of this project is to demonstrate proficiency in setting up EC2 instanc
 
 This project consists of the activities below. Click on the hyperlinks to see the processes/details of how these steps were acheived
 
-**Step 1:** [Create a VPC for the web server with a public subnet and internet gateway](/Create-Web-Server-With-Auto-Scaling/1-Create-VPC.md.md)
+**Step 1:** [Create a VPC for the web server with a public subnet and internet gateway](/Create-Web-Server-With-Auto-Scaling/1-Create-VPC.md)
 
 **Step 2:** [Create an S3 bucket for web assets, and then create 2 additional buckets as redundant storage for replication.](/Create-Web-Server-With-Auto-Scaling/2-Create-S3-Buckets.md)
 
@@ -26,6 +26,8 @@ This project consists of the activities below. Click on the hyperlinks to see th
 **Step 6:** [Set up an Auto-Scaling group to scale out/in the web servers as needed.](/Create-Web-Server-With-Auto-Scaling/6-Set-Up-Auto-Scaling-Group.md)
 
 **Step 7:** [Stress test the web servers to test the Elastic Load Balancer](/Create-Web-Server-With-Auto-Scaling/7-Stress-Test-Web-Server.md)
+
+**Step 8:** [Remove the AWS Assets](/Create-Web-Server-With-Auto-Scaling/8-Remove-AWS-Assets.md)
 
 **Note**: All AWS assets created during this exercise contains the tag: 
 **AWS-Labs:Test-Web-Server**
