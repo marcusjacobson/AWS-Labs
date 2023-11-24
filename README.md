@@ -1,5 +1,5 @@
-# AWS-Basic-Labs
-This repository contains the documentation for various basic AWS Projects. 
+# AWS-Labs
+This repository contains the documentation for various AWS Projects. 
 
 The sections below will cover the details of the different projects in this repo:
 
