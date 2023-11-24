@@ -1,4 +1,4 @@
-# IAM-Basic-Labs
+# AWS-Basic-Labs
 This repository contains the documentation for various IAM Basic Projects. These projects are practice exercise while preparing for the AWS Certified Solutions Architect Associate certification (SAA-C03) exam.
 
 The sections below will cover the details of the different projects in this repo:
